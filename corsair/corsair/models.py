@@ -18,6 +18,7 @@ class Corsair_User(models.Model):
         ('B', 'Investment Banking'),
         ('T', 'Technology')
     )
+    user_id = models.IntegerField()
     last_name = models.CharField(max_length=20)
     first_name = models.CharField(max_length=20)
     email = models.EmailField()
