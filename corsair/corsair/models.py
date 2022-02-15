@@ -5,6 +5,14 @@ from django.db import models
 ###################################################################
 
 class Corsair_User(models.Model):
+    class Employment():
+        employer_name = models.CharField(max_length=20)
+        title = models.CharField()
+        location = models.CharField()
+        description = models.TextField()
+        start_year = models.DateField()
+        end_year = models.DateField()
+
     CORSAIR_SECTORS = (
         ('C', 'Management Consulting'),
         ('B', 'Investment Banking'),
@@ -13,6 +21,7 @@ class Corsair_User(models.Model):
     last_name = models.CharField(max_length=20)
     first_name = models.CharField(max_length=20)
     email = models.EmailField()
+    phone_number = models.CharField(max_length=12)
     linked_in = models.URLField()
     class_of = models.IntegerField()
     sector = models.CharField(max_length=1, choices=CORSAIR_SECTORS)
@@ -21,5 +30,10 @@ class Corsair_User(models.Model):
     verification_link_header = models.CharField(max_length=200)
     verified = models.BooleanField(False)
     bio = models.TextField()
+    interests = models.JSONField()
+    current_employer = Employment()
+    past_employers = models.JSONField()
+
+
 
 
