@@ -1,0 +1,46 @@
+<!DOCTYPE html>        
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+    <script defer src="./login.js"></script>
+    <link rel="stylesheet" href="./login.css">
+    <title> Corsair Login </title>
+</head>
+<body>
+
+    <div class="banner">
+        <div style="height: 100%; display: flex; flex-flow: column; flex: 1 1 auto;"></div>
+    </div>
+    <div class="input" style="padding: 4rem;"> 
+        <h3>Corsair Society</h3>
+        <h1>Welcome</h1>
+        <form onsubmit="validateSignIn(event.preventDefault())">
+            <div style="display:flex; flex-direction: column; align-items: flex-start; justify-content: center; align-self: center; padding-bottom: 25rem;">
+                <label for="username">Username</label> <br>
+                <input name="username" id="username" style="width: 80%;"></input> <br>
+                <label for="password">Password</label>  <br>
+                <input type="password" name="password" id="password" style="width: 80%;"></input> <br>
+
+                <div style="width: 80%; float: left; padding-bottom: 1rem;">
+                    <div style="display: flex; width: 40%; float: left;">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <div style="width: 40%; float: right; text-align: right;"> 
+                        <a href="./reset-pw.html">Forgot Password?</a>
+                    </div>
+                </div>  
+                <div style="width: 80%; display: flex; justify-content: center; padding-bottom: 1rem;">
+                    <button type="submit" id="signin-button">Sign In</button> 
+                </div> 
+                <div style="width: 80%; display: flex; justify-content: center;">
+                    <a href="../register/register.html"><i>Dont have an account?</i></a>
+                </div>
+            </div>
+        </form>    
+    </div>
+        
+</body>

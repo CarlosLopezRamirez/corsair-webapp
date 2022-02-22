@@ -1,0 +1,23 @@
+body {
+    background-image: url("./assets/login_centralpark.jpg");
+}
+.login {
+    height: 100%;
+}
+.banner {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+
+.input {
+    width: 40%; 
+    height: 100%;
+    min-height: 100%;
+    float: right;
+    background: white;
+    overflow: hidden;
+}
