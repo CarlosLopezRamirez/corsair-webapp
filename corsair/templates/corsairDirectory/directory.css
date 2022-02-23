@@ -1,0 +1,51 @@
+#nav {
+    background-color: whitesmoke;
+}
+.section {
+    background-color: whitesmoke;
+    box-shadow: 10px 10px lightgray;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#post {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+#post-text {
+margin: 5px;
+padding: 0;
+}
+
+#post-submit {
+    background-color: whitesmoke;
+    box-shadow: 10px 10px lightgray;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: fit-content;
+}
+
+#headings {
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#selection-buttons {
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+#members-content {
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width:fit-content;
+}
