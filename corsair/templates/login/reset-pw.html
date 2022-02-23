@@ -1,0 +1,33 @@
+<!DOCTYPE html>        
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+    <script defer src="./reset-pw.js"></script>
+    <link rel="stylesheet" href="./reset-pw.css">
+    <title> Reset Password </title>
+</head>
+<body>
+    <div class="banner">
+        <!-- <h1 style="color: white;"></h1> -->
+    </div>
+    <div class="input" style="padding: 4rem;"> 
+        <h3>Corsair Society</h3>
+        <h1>Password Recovery</h1>
+        <form onsubmit="reset(event.preventDefault())">
+            <div style="display:flex; flex-direction: column; align-items: flex-start; justify-content: center; align-self: center; padding-bottom: 14rem;">
+                <label for="email">Email</label> <br>
+                <input name="email" id="email" style="width: 80%;"></input> 
+                <div style="width: 80%; display: flex; justify-content: center; padding-bottom: 1rem;">
+                    <button type="submit" id="reset-pw-button">Reset Password</button> 
+                </div> 
+                <div style="width: 80%; display: flex; justify-content: center;">
+                    <a href="../register/register.html"><i>Dont have an account?</i></a>
+                </div>
+            </div>
+        </form>    
+    </div>
+        
+</body>
