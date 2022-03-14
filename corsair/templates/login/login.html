@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script defer src="./login.js"></script>
     <link rel="stylesheet" href="./login.css">
     <title> Corsair Login </title>
 </head>
 <body>
     <div class="banner">
-        <!-- <h1 style="color: white;"></h1> -->
+       <h1 style="font-size: 90px; color: white; opacity: 90%; margin-top: 5rem;">Welcome to Corsair</h1>
     </div>
     <div class="input" style="padding: 4rem;"> 
         <h3>Corsair Society</h3>
         <h1>Welcome</h1>
         <form onsubmit="validateSignIn(event.preventDefault())">
-            <div style="display:flex; flex-direction: column; align-items: flex-start; justify-content: center; align-self: center; padding-bottom: 25rem;">
+            <div style="display:flex; flex-direction: column; align-items: flex-start; justify-content: center; align-self: center;">
                 <label for="username">Username</label> <br>
-                <input name="username" id="username" style="width: 80%;"></input> <br>
+                <input name="username" id="username" style="width: 100%;"></input> <br>
                 <label for="password">Password</label>  <br>
-                <input type="password" name="password" id="password" style="width: 80%;"></input> <br>
+                <input type="password" name="password" id="password" style="width: 100%;"></input> <br>
 
-                <div style="width: 80%; float: left; padding-bottom: 1rem;">
-                    <div style="display: flex; width: 40%; float: left;">
+                <div style="width: 100%; float: left; padding-bottom: 1rem;">
+                    <div style="display: flex; width: 50%; float: left;">
                         <input type="checkbox" name="remember" id="remember">
                         <label for="remember">Remember Me</label>
                     </div>
-                    <div style="width: 40%; float: right; text-align: right;"> 
+                    <div style="width: 50%; float: right; text-align: right;"> 
                         <a href="./reset-pw.html">Forgot Password?</a>
                     </div>
                 </div>  
-                <div style="width: 80%; display: flex; justify-content: center; padding-bottom: 1rem;">
-                    <button type="submit" id="signin-button">Sign In</button> 
+                <div style="width: 100%; display: flex; justify-content: center; padding-bottom: 1rem;">
+                    <button type="submit" id="signin-button" class="submit-button">Sign In</button> 
                 </div> 
-                <div style="width: 80%; display: flex; justify-content: center;">
+                <div style="width: 100%; display: flex; justify-content: center;">
                     <a href="../register/register.html"><i>Dont have an account?</i></a>
                 </div>
             </div>

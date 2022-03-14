@@ -3,6 +3,7 @@ function validateSignIn() {
     const password = document.getElementById("password");
     const remember = document.getElementById("remember");
 
+    
 
     console.log(username.value);
     console.log(password.value);
