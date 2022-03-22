@@ -27,14 +27,10 @@ class Corsair_User(models.Model):
     class_of = models.IntegerField()
     sector = models.CharField(max_length=1, choices=CORSAIR_SECTORS)
     profile_picture = models.FileField()
-    password = models.CharField()
+    password = models.CharField(max_length=200)
     verification_link_header = models.CharField(max_length=200)
-    verified = models.BooleanField(False)
+    verified = models.IntegerField()
     bio = models.TextField()
     interests = models.JSONField()
     current_employer = Employment()
     past_employers = models.JSONField()
-
-
-
-
