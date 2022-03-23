@@ -2,7 +2,6 @@
 
     <title> Corsair Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <script defer src="./register.js"></script>
 </head>
 
 <body> 
@@ -11,25 +10,33 @@
         <h3>Corsair Society </h3>
         <h1>Register</h1>
 
-        <form onsubmit="validatePassword()">
+        <form action="/register/store-data" method="post">
+
+            {% csrf_token %}
+
+            <div style="position:fixed; top:200px; left: 570px;" class="from-group">
+                <input style="text"; class="form-control" placeholder="Email" id="email" style="width: 300px;">
+            </div>
 
             <div style="position:fixed; top:250px; left: 570px;" class="from-group">
-                <input style="text" class="form-control" placeholder="Email" id="new_email" style="width: 300px;">
+                <input style="text" class="form-control" placeholder="Username" id="username" style="width: 300px;">
             </div>
-    
+
             <div style="position:fixed; top:300px; left: 570px;" class="from-group">
                 <input style="text" class="form-control" placeholder="Password" id="password" style="width: 300px;", type="password">
             </div>
     
             <div style="position:fixed; top:350px; left: 570px;" class="from-group">
-                <input style="text" class="form-control" placeholder="Confirm Password" id="confirm_password" style="width: 300px;" type="password">
+                <input style="text" class="form-control" placeholder="Confirm Password" id="confirm" style="width: 300px;" type="password">
             </div>
-    
+            
             <div style="position:fixed; top:400px; left: 570px;" class="from-group">
                 <button type="submit" id="signin-button" style="width: 150px;">Sign In</button> 
-            </div>  
-            
+            </div> 
+
         </form>
+ 
+
     </div>
 
 </body>
