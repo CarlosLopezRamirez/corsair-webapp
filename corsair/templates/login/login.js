@@ -9,3 +9,7 @@ function validateSignIn() {
     console.log(password.value);
     console.log(remember.value);
 }
+
+function transition() {
+    console.log("yo");
+}
