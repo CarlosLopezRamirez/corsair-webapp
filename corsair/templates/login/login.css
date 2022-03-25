@@ -17,6 +17,13 @@ label {
     flex-flow: column; 
     align-items: center;
 }
+.banner-text {
+    font-size: 90px; 
+    color: white; 
+    margin-top: 5rem;
+    opacity: 80%; 
+    text-shadow: 0px 1.5px #b39257;
+}
 .input {
     width: 50%; 
     height: 100%;
