@@ -1,16 +1,15 @@
 function validatePassword() {
-    const new_email = document.getElementById("email")
+    const email = document.getElementById("email");
     const password = document.getElementById("password");
-    const confirm_password = document.getElementById("confirm_password");
+    const confirm = document.getElementById("confirm");
 
-    console.log(new_email.value);
-    console.log(password.value);
-    console.log(confirm_password.value);
+    console.log(email.value);
 
-    if (password.value == confirm_password.value) {
-        console.log("password accepted");
+    if (password.value == confirm.value) { 
+        console.log("Password accepted");
+        window.location.replace("../corsairDirectory/corsair-directory.html");
     } else {
-        console.log("passwords do not match");
+        console.log("Reenter password");
     }
     
 }
