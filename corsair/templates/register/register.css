@@ -6,16 +6,27 @@ body {
     background-color: lightgrey;
 }
 
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(128, 128, 128, 0.27);
+}
+
 .input {
     margin-top: 10%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
     width: 30%;
     height: 60%;
     opacity: .9;
-    box-shadow: 5px 5px #77838d;
+    box-shadow: 7px 7px #77838d;
 }
 
 .content {
@@ -45,8 +56,6 @@ input{
     height: auto;
 }
 
-
-
 button {
     margin-top: 10%;
     margin-left: 33%;
@@ -66,4 +75,6 @@ button:hover {
     background-color: #000000;
     
 }
+
+
 
