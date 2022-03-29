@@ -48,6 +48,7 @@ input{
     display: flex;
     justify-content: space-between;
 }
+
 .checkboxes input {
     margin-top: 12px;
     background-color: none;
