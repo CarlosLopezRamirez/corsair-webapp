@@ -12,24 +12,23 @@
 </head>
 <body>
     <div class="banner">
-       <h1 style="font-size: 90px; color: white; opacity: 90%; margin-top: 5rem;">Welcome to Corsair</h1>
+       <h1 class="banner-text">Connect with Corsair.</h1>
     </div>
     <div class="input" style="padding: 4rem;"> 
-        <h3>Corsair Society</h3>
+        <img src="./assets/corsair_logo.png">
         <h1>Welcome</h1>
         <form onsubmit="validateSignIn(event.preventDefault())">
-            <div style="display:flex; flex-direction: column; align-items: flex-start; justify-content: center; align-self: center;">
+            <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; align-self: center;">
                 <label for="username">Username</label> <br>
                 <input name="username" id="username" style="width: 100%;"></input> <br>
                 <label for="password">Password</label>  <br>
                 <input type="password" name="password" id="password" style="width: 100%;"></input> <br>
-
                 <div style="width: 100%; float: left; padding-bottom: 1rem;">
                     <div style="display: flex; width: 50%; float: left;">
                         <input type="checkbox" name="remember" id="remember">
                         <label for="remember">Remember Me</label>
                     </div>
-                    <div style="width: 50%; float: right; text-align: right;"> 
+                    <div style="width: 50%; float: right; text-align: right;" onclick="transition()"> 
                         <a href="./reset-pw.html">Forgot Password?</a>
                     </div>
                 </div>  
