@@ -18,6 +18,7 @@ function Search(filter) {
 }
 
 filterSelection('All');
+
 function filterSelection(c) {
 
     members = document.getElementById("membersContent")
