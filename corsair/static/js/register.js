@@ -7,7 +7,6 @@ function validatePassword() {
 
     if (password.value == confirm.value) { 
         console.log("Password accepted");
-        window.location.replace("../corsairDirectory/corsair-directory.html");
     } else {
         console.log("Reenter password");
     }

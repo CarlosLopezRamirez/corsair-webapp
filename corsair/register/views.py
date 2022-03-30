@@ -9,6 +9,10 @@ def register(request):
         return render(request, 'register/register.html')
 
     elif request.method == "POST":
+
+        csrf_token = request.POST['csrfmiddlewaretoken']
+        email = request.POST['email']
+        password = request.POST['password']
         return HttpResponseRedirect("/directory/")
 
 
