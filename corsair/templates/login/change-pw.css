@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 body {
+    font-family: 'Open Sans', sans-serif; 
     background-image: url("https://cutewallpaper.org/26/aston-light-grey-city-wallpaper/2595430517.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+body:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(128, 128, 128, 0.27);
 }
 .main {
     width: 100%;
@@ -16,42 +27,36 @@ body {
 }
 .change-pw {
     padding: 2rem;
-    width: 45%;
-    opacity: .95;
+    width: 40%;
+    opacity: .94;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: white;
-    box-shadow: 0 60px 110px 0 rgb(0 0 0 / 30%);
+    box-shadow: 20px 20px 30px rgb(77,77,77, 0.9);
+    border-radius: 3px;
+}
+.change-pw:hover {
+    opacity: .98;
 }
 .pw-input {
-    width: 50%;
+    width: 55%;
     margin: 4px 0px 4px 0px;
     background-color: #c7d0d8;
     border: 1px solid #77838d;
-    box-shadow: 2px 2px 2px lightgrey; 
+    box-shadow: 2px 2px 2px rgb(77,77,77, 0.37); 
     margin: 10px;
-    margin-left: 5px;
-    /* box-shadow: 0 10px 10px 0 rgb(0 0 0 / 30%); */
 }
 .submit-button {
-    /*
-    width: 50%; 
-    margin: 15px 0px 5px 0px;
+    width: 55%;
+    margin: 15px 10px 15px 10px;
+    border: 0;
     background-color: #0c1822;
-    border: 1px solid #77838d;
-    background-color: lightgray;
-    cursor: pointer; */
-    margin: 15px 0px 5px 0px;
-    width: 50%;
-    background-color: #0c1822;
-    border: 1px solid #77838d;
-    box-shadow: 2px 2px 2px lightgrey;
-    border-radius: 7px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgb(77,77,77, 0.37); 
     color: rgb(201, 199, 199);
     font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }
 .submit-button:hover {
