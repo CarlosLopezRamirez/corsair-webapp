@@ -17,9 +17,9 @@ button {
     height: 8%;
     width: 30%;
     background-color: #0c1822;
-    border: 1px solid #77838d;
-    box-shadow: 3px 3px lightgrey;
-    border-radius: 7px;
+    border: 0;
+    box-shadow: 2px 2px 2px rgb(77,77,77, 0.9);
+    border-radius: 3px;
     color: rgb(201, 199, 199);
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -32,7 +32,7 @@ button:hover {
 input{
     background-color: #c7d0d8;
     border: 1px solid #77838d;
-    box-shadow: 2px 2px lightgrey;
+    box-shadow: 2px 2px 2px rgb(77,77,77, 0.37);
     height: 10%;
     width: 100%;
 }
@@ -75,7 +75,18 @@ input{
     width: fit-content;
     margin-top: auto;
     margin-bottom: auto;
+    margin-right: 5px;
 }
 .checkbox input:hover {
     cursor: pointer;
+}
+
+.logo:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    color: rgba(128, 128, 128, 0.27);
 }

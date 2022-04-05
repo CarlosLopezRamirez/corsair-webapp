@@ -54,7 +54,7 @@ body:before {
     border: 0;
     background-color: #0c1822;
     border-radius: 3px;
-    box-shadow: 2px 2px 2px rgb(77,77,77, 0.37); 
+    box-shadow: 2px 2px 2px rgb(77,77,77, 0.90); 
     color: rgb(201, 199, 199);
     font-size: 15px;
     cursor: pointer;
