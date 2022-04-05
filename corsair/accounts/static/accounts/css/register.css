@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 body {
     background-image: url("https://cdn.discordapp.com/attachments/943216163092066315/957021915145449582/pexels-mindaugas-1313534.jpg");
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
     background-color: lightgrey;
 }
-
 
 body::before {
     content: "";
@@ -24,38 +24,30 @@ body::before {
     margin-right: auto;
     padding: 20px;
     width: 30%;
-    height: 60%;
+    height: fit-content;
     opacity: .9;
-    box-shadow: 7px 7px #77838d;
+    border-radius: 3px;
+}
+
+.input:hover {
+    opacity: .95;
 }
 
 .content {
     margin: 20px;
     font-size:larger;
+    margin-left: 5px;
 }
 
 input{
     background-color: #c7d0d8;
     border: 1px solid #77838d;
-    box-shadow: 2px 2px lightgrey;
+    box-shadow: 2px 2px 2px lightgrey;
     margin: 10px;
-    height: 10%;
+    height: 5vh;
     width: 100%;
-    margin-left: 5px;
 }
 
-.checkboxes {
-    display: flex;
-    justify-content: space-between;
-}
-
-.checkboxes input {
-    margin-top: 12px;
-    background-color: none;
-    box-shadow: none;
-    width: fit-content;
-    height: auto;
-}
 
 button {
     margin-top: 10%;
@@ -63,9 +55,9 @@ button {
     height: 8%;
     width: 30%;
     background-color: #0c1822;
-    border: 1px solid #77838d;
-    box-shadow: 3px 3px lightgrey;
-    border-radius: 7px;
+    border: 0px;
+    box-shadow: 2px 2px 2px lightgrey;
+    border-radius: 3px;
     color: rgb(201, 199, 199);
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -76,3 +68,9 @@ button:hover {
     background-color: #000000;
     
 }
+
+a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
