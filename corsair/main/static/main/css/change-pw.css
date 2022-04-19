@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("https://cutewallpaper.org/26/aston-light-grey-city-wallpaper/2595430517.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(128, 128, 128, 0.27);
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.change-pw {
+    padding: 2%;
+    width: 40%;
+    opacity: .94;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 20px 20px 30px rgb(77,77,77, 0.9);
+    border-radius: 3px;
+}
+.change-pw:hover {
+    opacity: .98;
+}
+.pw-input {
+    width: 55%;
+    margin: 4px 0px 4px 0px;
+    background-color: #c7d0d8;
+    border: 1px solid #77838d;
+    box-shadow: 2px 2px 2px rgb(77,77,77, 0.37);
+    margin: 10px;
+}
+.submit-button {
+    width: 55%;
+    margin: 15px 10px 15px 10px;
+    border: 0;
+    background-color: #0c1822;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgb(77,77,77, 0.90);
+    color: rgb(201, 199, 199);
+    font-size: 15px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: #000000;
+}
