@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,36 +10,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href = "profile.css" rel = "{% static 'main/css/profile.css' %}">
+<link href = "profile.css" rel = "{% static 'main/css/profile.css' %}">
     
 </head>
 <body class = "container-fluid">
   <div class="row big">
     <div class="col-lg-8 right" id = "profile-content">
+      <div style = "float: right;">
 
-      <form action = "" method = "post">
-      <div style = "display: flex; justify-content: space-between;">
-      <h2 style="font-size: 40px;">
-        Edit Profile
-      </h2>
-
-             <button class = "edit-button" type="submit">Save Profile</button>
+             <button class = "edit-button" type="button">Edit Profile</button>
             </div>
 
         
             <div id="profile-image">
-              <label for="img">Select profile image:</label>
-              <br>
-              <input type="file" id="img" name="img" accept="image/*">
-              <br>
-              <input style = "margin-top: 10px;"type="submit">
+              <img src="https://wallpaperaccess.com/full/1285952.jpg" class = "pfp img-circle" alt="Avatar Logo">
            </div>
+                
+           <h2 class = "name" style="font-size: 40px;">
+            Rebecca Tian
+           </h2>
 
-                  <input type="name" class="name-inputs" name = "name" placeholder="Enter Name Here" id="name">
-                  <input type="text" class="name-inputs" name = "status" placeholder="Status" id="name">
-         
-                  <input type="text" class="content-inputs" name = "ncontent" placeholder="Enter profile bio here" id="name">
-             
+           <h2 class = "name" style="font-size: 40px;">
+            Student/Alumni
+           </h2>
+
+           <div id = "profile-info">
+             <p>Profile content blah blah blah Once upon a time, there lived three little pigs. One of them built
+               a house made out of straw because he was lazy. One of them built out of wood because he was also lazy?
+               I don't remember the story that well. Anyways, the last one made a house out of brick.
+             </p>
+        </div>
           </div>
 
           <div class="col-lg-3 left">
@@ -49,24 +48,23 @@
                   Interests
             </h2>
 
-              <input type="interests" class="name-inputs" style= "margin: 5px;" name = "interests" placeholder="Enter interests here" id="name">
-              <input type="interests" class="name-inputs" style= "margin: 5px;"name = "interests" placeholder="Enter interests here" id="name">
-              <input type="interests" class="name-inputs" style= "margin: 5px;"name = "interests" placeholder="Enter interests here" id="name">
+             <p id = "interest-1">Front-end Development</p>
+             <p id = "interest-1">User Experience Design</p>
+             <p id = "interest-1">Fintech</p>
 
           </div>
           <div id="left-boxes">
               <h2 id = "affiliation-header">
-                  <h2>Major/Job and Employer</h3>
-            </h3>
-            <input type="affiliation" style= "margin: 10px;"class="name-inputs" name = "affiliation" placeholder="Enter employer here" id="name">
+                  <h2>Major/Job and Employer</h2>
+                    </h2>
+           <p id = "interest-1">Cognitive Science B.A.</p>
           </div>
             <div id ="left-boxes">
               <h2>Contacts</h2>
-              <input type="contacts" style= "margin: 5px;" class="name-inputs" name = "contacts" placeholder="Phone Number" id="name">
-              <input type="contacts" style= "margin: 5px;" class="name-inputs" name = "contacts" placeholder="Email" id="name">
+              <p id = "interest-1">rt10839@uga.edu</p>
+              <p id = "interest-1">678-972-7574</p>
             </div>
           </div>
-        </form>
           </div>
 
     
