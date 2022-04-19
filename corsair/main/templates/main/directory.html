@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corsair Directory</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href = "directory.css" rel = "{% static 'main/css/directory.css' %}">
+    <script src = "{% static 'main/js/directory.js' %}"></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar" id = "nav">
+        <div class="container-fluid">
+          <div>
+            <img src="https://cdn.discordapp.com/attachments/943216163092066315/948374165835108423/Screen_Shot_2022-03-01_at_7.19.29_PM.png" alt="Corsair Logo" style="width:200px;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+          </div>
+
+              <input class="form-control me-2" id = "myInput" onkeyup = "Search()" type="text" placeholder="Search names...">
+
+          </div>
+          <ul class="navbar-nav">
+            <a class="navbar-brand" href="#">
+                <img src="https://wallpaperaccess.com/full/1285952.jpg" class = "pfp" alt="Avatar Logo">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" style = "color:black">First Name <br> Last Name</a>
+            </li>
+        </div>
+      </nav>
+    <div class = "row" id = "directory">
+
+    <div class = "col">
+
+        <div class = "section row" id = "post">
+        <div class = "row" id = "headings">
+          <div class = "col">
+          <h1>Members</h1>
+        </div>
+          <div class = "col-sm-5"   id = "selection-buttons">
+          <button class = "selection-buttons all" style = "width: fit-content"onclick = "filterSelection('All')">All</button>
+          <button class = "selection-buttons students" onclick = "filterSelection('Student')">Students</button>
+          <button class = "selection-buttons alumni" onclick = "filterSelection('Alumni')">Alumni</button>
+          <button class = "selection-buttons alumni" style = "background-color: black; color: white;"onclick = "filterSelection('Connections')">Friends</button>
+        </div>
+      </div>
+        <div id = "membersContent">
+          <div class="card">
+            <img class="card-img-top pfp1" src="https://wallpaperaccess.com/full/1285952.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Stacie Smaum</h4>
+              <p class="card-text">Alumni</p>
+              <a href="#" id = "selection-buttons">See Profile</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top pfp1" src="https://wallpaperaccess.com/full/1285952.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Hugh Jass</h4>
+              <p class="card-text">Student</p>
+              <a href="#">See Profile</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top pfp1" src="https://wallpaperaccess.com/full/1285952.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Oliver Klozoffe</h4>
+              <p class="card-text">Student</p>
+              <a href="#" >See Profile</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top pfp1" src="https://wallpaperaccess.com/full/1285952.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Ben Dover</h4>
+              <p class="card-text">Alumni</p>
+              <a href="#" >See Profile</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top pfp1" src="https://wallpaperaccess.com/full/1285952.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Jenna Tolls</h4>
+              <p class="card-text">Student</p>
+              <a href="#">See Profile</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top pfp1" src="https://wallpaperaccess.com/full/1285952.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Mike Hawk</h4>
+              <p class="card-text">Alumni</p>
+              <a href="#">See Profile</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top pfp1" src="https://wallpaperaccess.com/full/1285952.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Eileen Dover</h4>
+              <p class="card-text">Alumni</p>
+              <a href="#">See Profile</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top pfp1" src="https://wallpaperaccess.com/full/1285952.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Mike Hunt</h4>
+              <p class="card-text">Student</p>
+              <a href="#">See Profile</a>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+
+</div>
+
+
+</body>
+</html>
