@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <script defer src="./login.js"></script> -->
+    <link rel="stylesheet" href="% static '../../static/main/css/login.css' %">
+    <title> Corsair Login </title>
+</head>
+<body>
+    <div class="banner">
+       <h1 class="banner-text">Connect with Corsair.</h1>
+    </div>
+    <div class="input animate__animated animate__fadeIn" id="input">
+        <form onsubmit="validateSignIn(event.preventDefault())">
+            <h1 style="align-self: flex-start;">Login</h1>
+            <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; align-self: center;">
+                <label for="username">Username</label>
+                <input name="username" id="username" style="width: 100%;"></input>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" style="width: 100%;"></input>
+                <div style="width: 100%; display: flex; justify-content: space-between;">
+                    <div class="checkbox">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <div style="width: 30%; height: 50%; text-align: right; display: flex; justify-content: flex-end; align-items: center;" onclick="transition()">
+                        <a href="./reset-pw.html">Forgot Password?</a>
+                    </div>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: center; margin: 1%;">
+                    <button type="submit" id="signin-button">Sign In</button>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: center;">
+                    <a href="../register/register.html"><i>Dont have an account?</i></a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>[
