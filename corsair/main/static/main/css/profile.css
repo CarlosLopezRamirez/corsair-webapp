@@ -40,6 +40,9 @@ button:hover {
     background-color: black;
     color: rgb(214, 214, 214);
 }
+.name {
+    margin-top: 3%;
+}
 
 #profile-content {
     background-color: rgba(0, 0, 0, 0.904);
@@ -51,12 +54,14 @@ button:hover {
 }
 
 #profile-info {
-    background-color: rgba(170, 168, 168, 0.8);
-    width: 100%;
+    border: 1px solid rgb(60, 60, 60);
+    background-color: black;
+    border-radius: 2px;
+    color: rgb(135, 135, 135);
     height: 50%;
-    padding: 10px;
     margin-top: 5%;
-    border-radius: 5px;
+    padding: 15px;
+    padding-top: 30px;
 }
 
 #profile-name {
@@ -78,19 +83,14 @@ button:hover {
 }
 
 #interest-1 {
-    background-color: gray;
-    width: 200px;
-    height: fit-content;
-    border: 5px solid gray;
-    margin: 20px;
-    margin-left: 0px;
-    border-radius: 5px;
-}
-
-#interests-1 p {
-    padding: 0px;
-    margin: 0px;
-    
+    border: 1px solid rgb(60, 60, 60);
+    font-style: italic;
+    background-color: black;
+    border-radius: 2px;
+    color: rgb(135, 135, 135);
+    width: 17vw;
+    height: 5vh;
+    padding: 5px;
 }
 
 
@@ -133,7 +133,13 @@ label {
 
 
 .big {
-    display: flex; /* equal height of the children */
+    display: flex; 
   }
+
+.pfp {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
   
  
