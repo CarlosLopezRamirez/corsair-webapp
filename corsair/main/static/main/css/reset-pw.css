@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    color:#0c1822;
+}
+form {
+    width: 80%;
+    height: auto;
+}
+label {
+    margin: auto 0 auto 0;
+    white-space: nowrap;
+}
+a {
+    color: #0c1822;
+}
+a:hover {
+    color: #000000;
+}
+button {
+    height: 8%;
+    width: 30%;
+    background-color: #0c1822;
+    border: 0;
+    box-shadow: 2px 2px 2px rgb(77,77,77, 0.9);
+    border-radius: 3px;
+    color: rgb(201, 199, 199);
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #000000;
+
+}
+input{
+    background-color: #c7d0d8;
+    border: 1px solid #77838d;
+    box-shadow: 2px 2px 2px rgb(77,77,77, 0.37);
+    height: 10%;
+    width: 100%;
+}
+.banner {
+    background-image: url("https://media.discordapp.net/attachments/943216163092066315/945779361599086632/history-education-pss-transportation-centralpark-source.jpg");
+    width: 50%;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+.banner-text {
+    font-size: 90px;
+    color: white;
+    opacity: 90%;
+    margin-top: 10%;
+    opacity: 80%;
+    text-shadow: 0px 1.5px #0c1822;
+}
+.input {
+    width: 50%;
+    height: 100vh;
+    min-height: 100%;
+    float: right;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
