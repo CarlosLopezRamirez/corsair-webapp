@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    {% load static %}
+    <title>Confirm Account</title>
+    <link rel = "stylesheet" href = "{% static 'accounts/css/register.css' %}">
+    
+</head>
+<body>
+
+  <div class="input">
+    <h1>Invalid Registration</h1>
+    <p>{{errors}}</p>
+    <form action="{% url 'accounts:register' %}">
+      <button type="submit" name="redo">Redo</button>
+    </form> 
+  </div>
+  
+</body>
+</html> 

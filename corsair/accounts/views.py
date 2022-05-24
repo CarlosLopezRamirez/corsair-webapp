@@ -28,6 +28,9 @@ def login_view(request):
     else:
         return render(request, 'accounts/login.html')
 
+def reset_pw(request):
+    return render(request, 'accounts/reset-pw.html')
+
 def register(request):
     if request.method == 'POST':
         form = NewUserForm(request.POST)
@@ -36,9 +39,16 @@ def register(request):
             user.is_active = False
             user.save()
             return redirect('accounts:send_email', user_id=user.id)
+        else:
+            # return error message: form.errors
+            return render(request, 'accounts/invalid-register.html', {'errors':form.errors})
+            #print("invalid")
     else:
         form = NewUserForm()
     return render(request, 'accounts/register.html', {'form': form})
+
+#def invalid_form(request, error):
+ #   return render(request, error)
 
 def send_email(request, user_id):
     user = get_object_or_404(User, pk=user_id)

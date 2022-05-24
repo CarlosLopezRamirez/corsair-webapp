@@ -1,0 +1,35 @@
+<!DOCTYPE html>        
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <script defer src="./reset-pw.js"></script> -->
+    <link rel="stylesheet" href="{% static 'accounts/css/reset-pw.css' %}">
+    <title> Reset Password </title>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="banner-text">Connect with Corsair.</h1>
+    </div>
+    <div class="input animate__animated animate__fadeIn"> 
+        <form onsubmit="reset(event.preventDefault())">
+            <h1>Password Recovery</h1>
+            <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; align-self: center;">
+                <label for="email">Email</label>
+                <input name="email" id="email"></input> 
+                <div style="width: 100%; display: flex; justify-content: center; margin: 4% 0 2% 0;">
+                    <button type="submit" id="reset-pw-button" class="submit-button">Reset Password</button> 
+                </div> 
+                <div style="width: 100%; display: flex; justify-content: center;">
+                    <a href="{% url 'accounts:register' %}"><i>Dont have an account?</i></a>
+                </div>
+            </div>
+        </form>    
+    </div>
+        
+</body>

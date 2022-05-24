@@ -9,12 +9,13 @@
 </head>
 <body>
 
-<div class = "input">
-<h1>Confirm Your Account</h1>
-<p>A link has been sent to your email to confirm your account.</p>
-<form action="{% url 'accounts:send_email' user_id %}">
-  <button type="submit" id="signin-button" name = "resend">Resend Email</button>
-</form> 
-</div>
+  <div class = "input">
+      <h1>Confirm Your Account</h1>
+      <p>A link has been sent to your email to confirm your account.</p>
+    <form action="{% url 'accounts:send_email' user_id %}">
+      <button type="submit" id="signin-button" name = "resend">Resend Email</button>
+    </form> 
+  </div>
+  
 </body>
 </html> 
