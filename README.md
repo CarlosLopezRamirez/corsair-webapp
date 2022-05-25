@@ -6,6 +6,6 @@ This website gives students the opportunity to link with eachother and alumni to
 in order to aid their careers.
 
 Run the app with: \
-`python manage.py runserver`
+`python manage.py runserver` \
 then access at: \
 http://127.0.0.1:8000/accounts/login/ or http://127.0.0.1:8000/accounts/register/
