@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body {
+    background-size: cover; 
+    background-image: url(https://cdn.discordapp.com/attachments/943216163092066315/957021914625359942/pexels-burst-373965.jpg);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+#profile-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+#profile-image{
+    margin-right: auto;
+    margin-left: auto;
+}
+button {
+    border: solid 1px rgb(60, 60, 60);
+
+
+}
+
+button:hover {
+    background-color: lightgray;
+    color: black;
+    border: solid 1px white;
+}
+
+.edit-button {
+    border-radius: 2px;
+    background-color: black;
+    color: rgb(214, 214, 214);
+}
+.name {
+    margin-top: 3%;
+}
+
+#profile-content {
+    background-color: rgba(0, 0, 0, 0.904);
+    color:white;
+    padding: 50px;
+    border: 1px solid gray;
+    margin: 20px; 
+    border-radius: 2px;
+}
+
+#profile-info {
+    border: 1px solid rgb(60, 60, 60);
+    background-color: black;
+    border-radius: 2px;
+    color: rgb(135, 135, 135);
+    height: 50%;
+    margin-top: 5%;
+    padding: 15px;
+    padding-top: 30px;
+}
+
+#profile-name {
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgb(255, 252, 252);
+}
+
+
+#left-boxes {
+    color:white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.904);
+    border: 1px solid gray;
+    width: fit-content
+}
+
+#interest-1 {
+    border: 1px solid rgb(60, 60, 60);
+    font-style: italic;
+    background-color: black;
+    border-radius: 2px;
+    color: rgb(135, 135, 135);
+    width: 17vw;
+    height: 5vh;
+    padding: 5px;
+}
+
+
+.name-inputs {
+    background-color: black;
+    padding: 10px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: white;
+}
+
+input {
+    border: 1px solid rgb(60, 60, 60);
+    font-style: italic;
+    background-color: black;
+    border-radius: 2px;
+    color: rgb(100, 100, 100);
+}
+
+label {
+    color: rgb(100, 100, 100);
+    margin: 5px;
+}
+
+.content-inputs {
+    background-color: black;
+    height: 50%;
+    width: 100%;
+    height: 50%;
+    padding-top: 0px;
+    padding: 10px;
+    padding-bottom: 30%;
+    border-radius: 2px;
+    color: white;
+}
+
+#img {
+    background-color: black;
+}
+
+
+.big {
+    display: flex; 
+  }
+
+.pfp {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+  
+ 
