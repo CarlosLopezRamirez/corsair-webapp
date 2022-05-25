@@ -4,7 +4,7 @@
     
     {% load static %}
     <title>Confirm Account</title>
-    <link rel = "stylesheet" href = "{% static 'accounts/css/register.css' %}">
+    <link rel="stylesheet" href="{% static 'accounts/css/register.css' %}">
     
 </head>
 <body>
@@ -13,7 +13,7 @@
     <h1>Invalid Registration</h1>
     <p>{{errors}}</p>
     <form action="{% url 'accounts:register' %}">
-      <button type="submit" name="redo">Redo</button>
+      <button type="submit"> Redo </button>
     </form> 
   </div>
   

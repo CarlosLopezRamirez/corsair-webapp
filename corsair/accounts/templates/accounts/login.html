@@ -19,6 +19,7 @@
             {% csrf_token %}
             <h1>Login</h1>
             <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; align-self: center;">
+                <p><b>{{error}}</b></p>
                 <label for="username">Username</label> 
                 <input name="username" id="username"></input> 
                 <label for="password">Password</label>  
@@ -39,7 +40,7 @@
                     <a href="{% url 'accounts:register' %}"><i>Dont have an account?</i></a>
                 </div>
             </div>
-        </form>    
+        </form>   
     </div>
         
 </body>
